@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/RMX3191
+DEVICE_PATH := device/realme/RMX3085
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -37,7 +37,7 @@ TARGET_USES_UEFI := true
 TARGET_BOARD_PLATFORM := mt6768
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX3191,RMX3193
+TARGET_OTA_ASSERT_DEVICE := RMX3085,RMX3193
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
@@ -165,5 +165,5 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # PBRP specific build flags
-PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_TORCH_PATH := "/sys/class/flashlight"
+# PB_DISABLE_DEFAULT_TREBLE_COMP := true
+# PB_TORCH_PATH := "/sys/class/flashlight"
