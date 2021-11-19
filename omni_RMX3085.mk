@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/roo
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3085
-PRODUCT_NAME := omni_RMX3085
+PRODUCT_NAME := twrp_RMX3085
 PRODUCT_BRAND := RMX3085
 PRODUCT_MODEL := Realme 8
 PRODUCT_MANUFACTURER := Realme
