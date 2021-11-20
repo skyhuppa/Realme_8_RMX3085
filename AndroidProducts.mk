@@ -6,6 +6,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_RMX3085.mk
+    $(LOCAL_DIR)/twrp_RMX3085.mk
 
 COMMON_LUNCH_CHOICES := twrp_RMX3085-eng
