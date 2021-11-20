@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common Omni stuff.
  $(call inherit-product, vendor/twrp/config/common.mk)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
-
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+	$(LOCAL_PATH)/prebuilt/dtb:dtb.img
+ 
 # Device identifier. This must come after all inclusions
-
 PRODUCT_DEVICE := RMX3085
 PRODUCT_NAME := twrp_RMX3085
 PRODUCT_BRAND := realme
