@@ -16,11 +16,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 # Device identifier. This must come after all inclusions
+
 PRODUCT_DEVICE := RMX3085
 PRODUCT_NAME := twrp_RMX3085
-PRODUCT_BRAND := RMX3085
-PRODUCT_MODEL := Realme 8
-PRODUCT_MANUFACTURER := Realme
+PRODUCT_BRAND := realme
+PRODUCT_MODEL := RMX3085
+PRODUCT_MANUFACTURER := realme
+PRODUCT_RELEASE_NAME := realme 8
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
