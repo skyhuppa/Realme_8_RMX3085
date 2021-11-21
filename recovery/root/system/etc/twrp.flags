@@ -5,9 +5,6 @@
 /recovery         emmc     /dev/block/platform/bootdevice/by-name/recovery                flags=backup=1;display="Recovery"
 /vbmeta           emmc     /dev/block/platform/bootdevice/by-name/vbmeta                  flags=backup=1;display="VBMeta";flashimg=1
 
-/data             ext4     /dev/block/platform/bootdevice/by-name/userdata                flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts
-/metadata         ext4     /dev/block/platform/bootdevice/by-name/md_udc                  flags=display="Metadata"
-
 /protect_f        ext4     /dev/block/platform/bootdevice/by-name/protect1                flags=display="Protect_F";backup=1;
 /protect_s        ext4     /dev/block/platform/bootdevice/by-name/protect2                flags=display="Protect_S";backup=1;
 /persist          ext4     /dev/block/platform/bootdevice/by-name/persist                 flags=display="Persist";backup=1;
