@@ -14,8 +14,9 @@ WHAT IS NOT WORKING
 
 ## Device specifications
 
-| Device              |                 Realme 8   |
-| Models              |                 RMX3085    |
+
+| Device              :                 Realme 8   |
+| Models              :                 RMX3085    |
 | -------------------:| :--------------------------------------------------------|
 | Chipset             | Mediatek Helio G95 (12 nm)                               |
 | CPU                 | Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55) |
