@@ -163,7 +163,8 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_OZIP_DECRYPT_KEY := 0000
-
+TW_Y_OFFSET := 80
+TW_H_OFFSET := -80
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
