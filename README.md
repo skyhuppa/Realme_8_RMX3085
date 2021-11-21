@@ -1,13 +1,13 @@
-
 TWRP device tree for Realme 8 ( RMX3085 )
+
                 TESTERS
                 
   Dev : __ | 
 
   CREDITS
    
---|ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ
---|HemanthJabalpuri
+-->|ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ
+--||HemanthJabalpuri
 
 WHAT IS NOT WORKING
 --> Decryption, but working on it so be patient.
