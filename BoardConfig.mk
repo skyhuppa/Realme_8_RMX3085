@@ -100,7 +100,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata my_product my_engineering my_company my_carrier my_region my_heytap my_stock my_preload my_manifest
+BOARD_ROOT_EXTRA_FOLDERS += metadata 
 
 # MTK Hardware
 BOARD_HAS_MTK_HARDWARE := true
