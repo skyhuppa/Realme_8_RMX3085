@@ -19,7 +19,7 @@ WHAT IS NOT WORKING? raise your issue
 | Resolution          | 1080 x 2400 pixels, 20:9 ratio (~411 ppi density)         |
 | Announced           |      2021, March 24                                       |
 | CREDIT              |  Twrp Team / EngRudhy / HemanthJabalpuri /ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ  |
-| ------------------- | --------------------------------------------------------- |
+|                     |                                                           |
 
 ## Device picture
 
