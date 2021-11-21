@@ -6,14 +6,12 @@ TWRP device tree for Realme 8 ( RMX3085 )
 ---| Dev : __ | ----
 
   
-   
    CREDITS >--|ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ--|-|HemanthJabalpuri|
 
 WHAT IS NOT WORKING
 --> Decryption, but working on it so be patient.
 
 ## Device specifications
-
 
 | Device              :                 Realme 8   |
 | Models              :                 RMX3085    |
