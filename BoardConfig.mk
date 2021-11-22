@@ -158,3 +158,8 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+# PBRP specific build flags
+ PB_DISABLE_DEFAULT_TREBLE_COMP := true
+ PB_TORCH_PATH := "/sys/class/flashlight"
+ 
