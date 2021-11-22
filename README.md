@@ -12,7 +12,7 @@ Download Link: https://www.androidfilehost.com/?fid=7161016148664843768
 | Chipset             | Mediatek Helio G95 (12 nm)                                |
 | CPU                 | Octa-core (2x2.05 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)  |
 | GPU                 | Mali-G76 MC4                                              |
-| Memory              |  4GB RAM /  4GB RAM / 6GB RAM /  8GB RAM                  |
+| Memory              | 4GB RAM / 6GB RAM /  8GB RAM                              |
 | Shipped OS version  | 11  / Realme UI 2.0                                       |
 | Storage             | 64GB / 128GB / 512GB / UFS UFS 2.1 flash storage          |
 | Battery             | Li-Po 5000 mAh, non-removable                             |
