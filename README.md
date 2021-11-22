@@ -14,7 +14,7 @@ Download Link: https://www.androidfilehost.com/?fid=7161016148664843768
 | GPU                 | Mali-G76 MC4                                              |
 | Memory              | 4GB RAM / 6GB RAM /  8GB RAM                              |
 | Shipped OS version  | 11  / Realme UI 2.0                                       |
-| Storage             | 64GB / 128GB / 512GB / UFS UFS 2.1 flash storage          |
+| Storage             | 64GB / 128GB / 512GB / UFS 2.1 flash storage              |
 | Battery             | Li-Po 5000 mAh, non-removable                             |
 | Size                | 6.4 inches, 98.9 cm2 (~83.3% screen-to-body ratio)        |
 | Resolution          | 1080 x 2400 pixels, 20:9 ratio (~411 ppi density)         |
