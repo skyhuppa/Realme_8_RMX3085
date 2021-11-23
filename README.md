@@ -1,9 +1,7 @@
 TWRP device tree for Realme 8 [ RMX3085 ]
   
-WHAT IS NOT WORKING? raise your issue
-
-Download Link: https://www.androidfilehost.com/?fid=7161016148664843768
-
+WHAT IS NOT WORKING? raise
+XDA: https://forum.xda-developers.com/t/realme-8-rmx3085-twrp_-_root.4365305/
 ## Device specifications
 
 | Device              | Realme 8   |
