@@ -17,12 +17,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
  	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
  
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX3085
-PRODUCT_NAME := twrp_RMX3085
+PRODUCT_DEVICE := RMX3191
+PRODUCT_NAME := omni_RMX3191
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX3085
+PRODUCT_MODEL := rralme 8
 PRODUCT_MANUFACTURER := realme
-PRODUCT_RELEASE_NAME := realme 8
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -31,8 +30,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
-    
-PRODUCT_SHIPPING_API_LEVEL := 30    
+
+
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
