@@ -17,8 +17,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
  	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
  
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := RMX3191
-PRODUCT_NAME := omni_RMX3191
+PRODUCT_DEVICE := RMX3085
+PRODUCT_NAME := twrp_RMX3085
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := rralme 8
 PRODUCT_MANUFACTURER := realme
