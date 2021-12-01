@@ -1,10 +1,14 @@
-TWRP device tree for Realme 8 [ RMX3085 ]
+## TWRP device tree for Realme 8 [ RMX3085 ]
   
-WHAT IS NOT WORKING? raise your issue
+## What's not working? 
 
-Visit xda for details: https://forum.xda-developers.com/t/realme-8-rmx3085-twrp_-_root.4365305/
+Send Feedback
 
-## Device specifications
+## Discussion 
+
+[XDA Thread](https://forum.xda-developers.com/t/realme-8-rmx3085-twrp_-_root.4365305/).
+
+## Device Specifications
 
 | Device              | Realme 8   |
 | Models              | RMX3085    |
@@ -22,7 +26,7 @@ Visit xda for details: https://forum.xda-developers.com/t/realme-8-rmx3085-twrp_
 | CREDIT              |  Twrp Team / EngRudhy / HemanthJabalpuri /ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ  |
 |                     |                                                           |
 
-## Device picture
+## Device Picture
 
 ![ Realme 8 -RMX3085 ](https://www.gizmochina.com/wp-content/uploads/2021/03/realme-8-pro-black-1.png)
 
