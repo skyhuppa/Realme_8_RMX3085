@@ -1,6 +1,6 @@
 ## TWRP device tree for Realme 8 [ RMX3085 ]
   
-## WHhat's not working? 
+## What's not working? 
 
 Send Feedback
 
