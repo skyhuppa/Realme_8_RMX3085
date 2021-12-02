@@ -13,8 +13,8 @@
 # Inherit some common Omni stuff.
  $(call inherit-product, vendor/omni/config/common.mk)
 
- PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
- 	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
+ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) 
+ #	 $(LOCAL_PATH)/prebuilt/dtb:dtb.img
  
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3085
