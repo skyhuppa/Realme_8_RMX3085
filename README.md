@@ -3,7 +3,7 @@
   <a href="https://pitchblackrecovery.com"><img src="https://raw.githubusercontent.com/shovon668/xda-template/r3/pbrp3-banner-xda.png" alt="Welcome to PitchBlack Recovery Project 👋" width="600"></a>
   <br>
 
-## TWRP device tree for Realme 8 [ RMX3085 ]
+## PBRP for Realme 8 [ RMX3085 ] device
   
 ## What's not working? 
 
