@@ -5,10 +5,10 @@
 
 ## Credit
   
-  PBRP Yeam
-  TWRP TEAM
-  EngRudhy
-  HemanthJabalpuri
+  PBRP Team |
+  TWRP TEAM |
+  EngRudhy |
+  HemanthJabalpuri |
   ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ  
 
 ## PBRP for Realme 8 [ RMX3085 ] Device
