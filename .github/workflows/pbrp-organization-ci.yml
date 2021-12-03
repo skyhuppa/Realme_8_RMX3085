@@ -13,14 +13,7 @@ on:
 
 env:
   BUILD_RELEASE_TYPE: ${{ github.event.inputs.DEPLOY_TYPE }}
-  CHANGELOG: ${{ github.event.inputs.ChangeLogs }}
-  BOT_API: ${{ secrets.BOT_API }}
-  GCF_AUTH_KEY: ${{ secrets.GCF_AUTH_KEY }}
-  GH_BOT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  GitHubMail: ${{ secrets.GitHubMail }}
-  GitHubName: ${{ secrets.GitHubName }}
-  SFPassword: ${{ secrets.SFPassword }}
-  SFUserName: ${{ secrets.SFUserName }}
+  . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
   TARGET: 'pbrp'
   #EXTRA_CMD: "Extra Commands Here"
 
@@ -34,8 +27,8 @@ jobs:
          uses: rokibhasansagar/slimhub_actions@main
 
        - name: Auto Adapt Manifest
-         # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
-         run: echo "MANIFEST=https://github.com/PitchBlackRecoveryProject/manifest_pb -b ${GITHUB_REF##*/}" >> $GITHUB_ENV
+         # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${android-11.0_REF##*/}" */ 
+         run: echo "MANIFEST=https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-11.0
 
        - name: Export Vars
          run: |
