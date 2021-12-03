@@ -1,4 +1,4 @@
-#
+  #
 # Copyright (C) 2020 The Android Open Source Project
 # Copyright (C) 2020 The TWRP Open Source Project
 # Copyright (C) 2020 SebaUbuntu's TWRP device tree generator
@@ -18,7 +18,9 @@
 
 DEVICE_PATH := device/realme/RMX3085
 
+# For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -69,16 +71,26 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 #AVB
 BOARD_AVB_ENABLE := true
+BOARD_AVB_VBMETA_SYSTEM := system product
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_VBMETA_VENDOR := vendor odm
+BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 2
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 3
 
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 7327449088
 BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_SIZE := 7327449088 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
-BOARD_MAIN_PARTITION_LIST  := system vendor
+BOARD_MAIN_PARTITION_LIST  := product odm system vendor
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -101,7 +113,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata my_product my_engineering my_company my_custom my_carrier my_region my_heytap my_stockmy_preload my_manifest
+BOARD_ROOT_EXTRA_FOLDERS += metadata my_product my_engineering my_company my_custom my_carrier my_region my_heytap my_stock my_preload my_manifest
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -129,9 +141,9 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
-TW_USE_FSCRYPT_POLICY := 1
+# W_INCLUDE_CRYPTO_FBE := true
+# TW_INCLUDE_FBE_METADATA_DECRYPT := true
+# TW_USE_FSCRYPT_POLICY := 1
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
@@ -149,8 +161,8 @@ TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_OZIP_DECRYPT_KEY := 0000
 TW_NO_HAPTICS := true
-TW_Y_OFFSET := 115
-TW_H_OFFSET := -115
+TW_Y_OFFSET := 100
+TW_H_OFFSET := -100
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
