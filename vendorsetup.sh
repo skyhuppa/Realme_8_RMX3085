@@ -55,7 +55,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_NO_SAMSUNG_SPECIAL=1
     export FOX_INSTALLER_DEBUG_MODE=1
     export OF_USE_TWRP_SAR_DETECT=1
-    export OF_TARGET_DEVICES=umi
+    export OF_TARGET_DEVICES=RMX3085
     export OF_USE_GREEN_LED=0
     export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
     export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
