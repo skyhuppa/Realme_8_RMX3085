@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="umi"
+FDEVICE="RMX3085"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
@@ -40,8 +40,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
     export OF_NO_RELOAD_AFTER_DECRYPTION=1
     export FOX_DISABLE_APP_MANAGER=1
-    export OF_MAINTAINER=yarpiin
-    export FOX_VERSION=White_Wolf-A11
+    export OF_MAINTAINER=Adasi_Kaakyire
+    export FOX_VERSION=White wolf_A11
     export OF_PATCH_AVB20=1
     export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
     export OF_CHECK_OVERWRITE_ATTEMPTS=1
