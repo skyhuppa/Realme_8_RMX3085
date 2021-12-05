@@ -39,7 +39,4 @@ PRODUCT_PACKAGES += \
 
 
 
-# HACK: Set vendor patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.date.utc=1230768000
     
