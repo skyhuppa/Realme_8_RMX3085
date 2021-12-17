@@ -31,7 +31,7 @@ Send Feedback
 | Size                | 6.4 inches, 98.9 cm2 (~83.3% screen-to-body ratio)        |
 | Resolution          | 1080 x 2400 pixels, 20:9 ratio (~411 ppi density)         |
 | Announced           |      2021, March 24                                       |
-| CREDIT              |  Twrp Team / EngRudhy / HemanthJabalpuri /ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ  |
+| Network             |  GSM / HSPA / LTE                                         |
 |                     |                                                           |
 
 ## Device Picture
