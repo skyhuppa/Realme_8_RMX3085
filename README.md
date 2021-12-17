@@ -2,7 +2,6 @@
   
 ## Credit
   
-  PBRP Team |
   TWRP TEAM |
   EngRudhy |
   HemanthJabalpuri |
