@@ -1,5 +1,13 @@
 ## TWRP device tree for Realme 8 [ RMX3085 ]
   
+## Credit
+  
+  PBRP Team |
+  TWRP TEAM |
+  EngRudhy |
+  HemanthJabalpuri |
+  ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ   
+  
 ## What's not working? 
 
 Send Feedback
