@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
  
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3085
-PRODUCT_NAME := twrp_RMX3085
+PRODUCT_NAME := omni_RMX3085
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 8
 PRODUCT_MANUFACTURER := realme
