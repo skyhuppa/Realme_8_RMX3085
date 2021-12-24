@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_DEVICE := RMX3085
 PRODUCT_NAME := twrp_RMX3085
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := rralme 8
+PRODUCT_MODEL := realme 8
 PRODUCT_MANUFACTURER := realme
 
 # Dynamic
