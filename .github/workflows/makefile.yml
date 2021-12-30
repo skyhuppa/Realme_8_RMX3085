@@ -1,19 +1,11 @@
-name: OFOX Builder
-on:
-  workflow_dispatch:
-    inputs:
-      crypto:
-        description: "是否禁用加密模块，true or false"
-        required: false
-        default: "false"
-      Enable_cache:
-        description: "是否启用cache，true or false"
-        required: true
-        default: "true"
-      Delete_oldReleases:
-        description: "是否删除旧的发布，true or false"
-        required: false
-        default: "false"
+
+
+
+jobs:
+  build:
+  
+runs-on: ubuntu-latest
+
 env:
   Rec_name: Ofox
   Rec_ver: "11.0"
@@ -25,10 +17,6 @@ env:
   target: recoveryimage
 
 
-jobs:
-  build:
-  
-    runs-on: ubuntu-latest
 
     steps:
       - name: "Cleanup Environment"
