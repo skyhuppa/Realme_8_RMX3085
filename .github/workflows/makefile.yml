@@ -19,7 +19,7 @@ env:
 
 
 
-      - name: "Cleanup Environment"
+
         uses: actions/checkout@v2
 
       - name: Initializing environment
