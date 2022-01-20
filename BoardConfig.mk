@@ -100,7 +100,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-BOARD_ROOT_EXTRA_FOLDERS += metadata 
+BOARD_ROOT_EXTRA_FOLDERS += metadata my_product my_engineering my_company my_carrier my_region my_heytap my_stock my_preload my_manifest my_custom my_version
+
 
 # Crypto
 PLATFORM_SECURITY_PATCH := 2099-12-31
