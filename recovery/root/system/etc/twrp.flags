@@ -1,11 +1,19 @@
-# mount point    fstype    device                         flags
-/recovery        emmc      /dev/block/by-name/recovery    flags=backup
-/boot            emmc      /dev/block/by-name/boot
+# mount point    fstype    device                       device2               flags
+/recovery        emmc      /dev/block/by-name/recovery    flags=backup;flashimg
+/boot            emmc      /dev/block/by-name/boot        flags=backup;flashimg
 /cache           ext4      /dev/block/by-name/cache
-/dtbo            emmc      /dev/block/by-name/dtbo
+/dtbo            emmc      /dev/block/by-name/dtbo        flags=backup;flashimg
 /vbmeta          emmc      /dev/block/by-name/vbmeta      flags=backup;flashimg
 /persist         ext4      /dev/block/by-name/persist     flags=backup
+/metadata        ext4      /dev/block/by-name/md_udc
+/tee1            emmc      /dev/block/by-name/tee1        flags=backup
+/tee2            emmc      /dev/block/by-name/tee2        flags=backup
 /persistent      emmc      /dev/block/by-name/frp         flags=backup
+/bootloader      emmc      /dev/block/by-name/lk          flags=backup
+/bootloader2     emmc      /dev/block/by-name/lk2         flags=backup
+/logo            emmc      /dev/block/by-name/logo        flags=backup;flashimg
+/expdb           emmc      /dev/block/by-name/expdb
+/seccfg          emmc      /dev/block/by-name/seccfg
 
 # IMEI and modem related
 # below four partitions are ext4, but we are using only for backup so emmc
@@ -17,5 +25,5 @@
 /proinfo         emmc      /dev/block/by-name/proinfo     flags=backup
 
 # Removable storage
-/external_sd		auto	/dev/block/mmcblk1p1		/dev/block/mmcblk1		flags=display="External SDcard";storage;wipeingui;removable;backup=0
-/usbstorage       auto    /dev/block/sdd1  /dev/block/sdd             flags=display="USB Storage";storage;wipeingui;removable;fsflags="utf8"
+/external_sd     auto      /dev/block/mmcblk1p1         /dev/block/mmcblk1
+/usb-otg         auto      /dev/block/sda1              /dev/block/sda        flags=storage;wipeingui;removable
