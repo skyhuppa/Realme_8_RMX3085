@@ -115,7 +115,7 @@ jobs:
           export ALLOW_MISSING_DEPENDENCIES=true
           export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
           export LC_ALL="C"
-          export OF_MAINTAINER="RC1844"
+          export OF_MAINTAINER="skyhuppa"
           export FOX_VERSION="Unofficial"
           export OF_SCREEN_H=2160
           export OF_PATCH_AVB20=1
