@@ -44,7 +44,7 @@ jobs:
           sudo -E apt-get -qq install curl libstdc++6 git wget repo rsync aria2
           echo "::endgroup::"
           git config --global user.name "${{github.actor}}"
-          git config --global user.email "1844766234@qq.com"
+          git config --global user.email "skyhuppa@hotmail.co.uk"
           git clone https://gitlab.com/OrangeFox/misc/scripts.git --depth=1 --single-branch
           cd scripts
           echo "::group::Setup Build Env"
