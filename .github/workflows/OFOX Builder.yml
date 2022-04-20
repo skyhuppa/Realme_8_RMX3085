@@ -17,7 +17,7 @@ on:
 env:
   Rec_name: Ofox
   Rec_ver: "11.0"
-  Rec_url: https://gitlab.com/OrangeFox/sync.git -b master
+  Rec_url: https://gitlab.com/skyhuppa/sync.git -b master
   device: RMX3085
   DT_url: https://github.com/skyhuppa/Realme_8_RMX3085 -b fox_11.0
   DT_path: device/realme/RMX3085
