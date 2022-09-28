@@ -36,6 +36,6 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # HACK: Set vendor patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.date.utc=1230768000
+# PRODUCT_PROPERTY_OVERRIDES += \
+   # ro.build.date.utc=1230768000
     
