@@ -1,4 +1,9 @@
 ## TWRP device tree for Realme 8 [ RMX3085 ]
+
+## Build Status
+
+Build successfully from  platform_manifest_twrp_aosp branch
+ twrp-12.1 
   
 ## Credit
   
