@@ -8,8 +8,11 @@ Build successfully from  platform_manifest_twrp_aosp branch
 ## Credit
   
   TWRP TEAM |
+  
   EngRudhy |
+  
   HemanthJabalpuri |
+  
   ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ   
   
 ## What's not working? 
