@@ -7,11 +7,11 @@ Build successfully from  platform_manifest_twrp_aosp branch
   
 ## Credit
   
-  TWRP TEAM |
+  TWRP TEAM 
   
-  EngRudhy |
+  EngRudhy 
   
-  HemanthJabalpuri |
+  HemanthJabalpuri 
   
   ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ   
   
