@@ -9,6 +9,9 @@
 PRODUCT_RELEASE_NAME := RMX3085
 DEVICE_PATH := device/realme/RMX3085
 
+# Inherit from device.mk configuration
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
@@ -37,8 +40,9 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
-
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.date.utc=1230768000
     
+# Assert
+TARGET_OTA_ASSERT_DEVICE := RMX3085,RMX3085_in,RMX3085_gl

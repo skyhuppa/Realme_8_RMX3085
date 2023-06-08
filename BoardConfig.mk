@@ -142,6 +142,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_OZIP_DECRYPT_KEY := 0000
+TW_LOAD_VENDOR_MODULES :="bt_drv.ko wlan_drv_gen4m.ko wmt_chrdev_wifi.ko wmt_drv.ko"
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 
