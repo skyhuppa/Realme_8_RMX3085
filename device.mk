@@ -30,8 +30,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # otacert
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(DEVICE_PATH)/security/realme_releasekey
+# PRODUCT_EXTRA_RECOVERY_KEYS += \
+#    $(DEVICE_PATH)/security/realme_releasekey
 
 # TWRP_REQUIRED_MODULES += realme_prebuilt \
 #    magisk_prebuilt
