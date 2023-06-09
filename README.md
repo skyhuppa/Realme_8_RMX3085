@@ -3,11 +3,10 @@
 
 
 
-## Status | Not Yet Ready
-  
+## Status 
+  Build Ready
 ## What's not working? 
-
-Work in progress
+Testers will have to givve feedback
 
 ## Discussion 
 
