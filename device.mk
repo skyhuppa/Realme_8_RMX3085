@@ -33,8 +33,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/realme_releasekey
 
-TWRP_REQUIRED_MODULES += realme_prebuilt \
-    magisk_prebuilt
+# TWRP_REQUIRED_MODULES += realme_prebuilt \
+#    magisk_prebuilt
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
