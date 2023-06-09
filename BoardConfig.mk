@@ -8,7 +8,7 @@
 DEVICE_PATH := device/realme/RMX3085
 
 # For building with minimal manifest
-BUILD_BROKEN_DUP_RULES := true
+# BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
