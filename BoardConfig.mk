@@ -10,6 +10,9 @@ DEVICE_PATH := device/realme/RMX3085
 # For building with minimal manifest
 # BUILD_BROKEN_DUP_RULES := true
 
+# Disable prebuilt ELF check by setting 
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
