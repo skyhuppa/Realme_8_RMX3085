@@ -63,9 +63,9 @@ if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MA
 	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 
 	# -- add settings for R11 --
-    export OF_MAINTAINER=Skyhuppa
-    export FOX_BUILD_TYPE="Stable"
-    export FOX_VARIANT=Realme 8
+        export OF_MAINTAINER=Skyhuppa
+        export FOX_BUILD_TYPE="Stable"
+        export FOX_VARIANT=Realme 8
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	# -- end R11 settings --
