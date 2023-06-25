@@ -1,6 +1,7 @@
+#!/usr/bin/env bash
 #
 #	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2021 The OrangeFox Recovery Project
+# 	Copyright (C) 2020-2021 The OrangeFox Recovery Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -37,7 +38,7 @@ fi
 
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for rosemary...\x1b[m"
+	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b[m"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Skyhuppa"
@@ -75,7 +76,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
         export OF_QUICK_BACKUP_LIST="/boot;/data;"
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=1
-		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"
+		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/realme/RMX3085/Magisk/Magisk.zip"
 
         export BUNDLED_MAGISK_VER="25.2"
         export BUNDLED_MAGISK_SUM="0bdc32918b6ea502dca769b1c7089200da51ea1def170824c2812925b426d509" # Sha256 sum of the prebuilt magisk
