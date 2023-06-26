@@ -74,11 +74,4 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
                 export OF_QUICK_BACKUP_LIST="/boot;/data;"
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=1
-  
-	# let's see what are our build VARs
-    if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
-  	        export | grep "FOX" >> $FOX_BUILD_LOG_FILE
-  	        export | grep "OF_" >> $FOX_BUILD_LOG_FILE
-   	        export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
-  	        export | grep "TW_" >> $FOX_BUILD_LOG_FILE
-    fi
+
