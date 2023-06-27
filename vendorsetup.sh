@@ -35,7 +35,7 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 # Dirty Fix: Only declare orangefox vars when needed
-if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
+if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox.mk ]; then
 	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b[m"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
@@ -75,3 +75,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=1
 
+	# let's see what are our build VARs
+	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
+	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
+	   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
+	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
+	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
+	fi
+fi
