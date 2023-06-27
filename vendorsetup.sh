@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
-	export TARGET_DEVICE_ALT="mojito,sunny"
-	export OF_TARGET_DEVICES="mojito,sunny"
+	export TARGET_DEVICE_ALT="RMX3085"
+	export OF_TARGET_DEVICES="RMX3085"
 	export OF_VIRTUAL_AB_DEVICE=1
 	export OF_AB_DEVICE=1
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
@@ -83,7 +83,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	
 	# R11.1 Settings
 	export FOX_VERSION="R11.1"
-	export OF_MAINTAINER="Sushrut1101"
+	export OF_MAINTAINER="Skyhuppa"
+        export FOX_BUILD_TYPE="Unofficial"
 	export FOX_VARIANT="A11"
 
 	# let's see what are our build VARs
