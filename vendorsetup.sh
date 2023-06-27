@@ -38,7 +38,7 @@ fi
 
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b[m"
+	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Skyhuppa"
@@ -87,3 +87,4 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	       export | grep "TW_" >> $FOX_BUILD_LOG_FILE
           fi
       fi   
+ fi
