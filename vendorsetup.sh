@@ -38,7 +38,7 @@ fi
 
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b"
+	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b[m"
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Skyhuppa"
@@ -68,7 +68,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_HIDE_NOTCH=1
 		export OF_CLOCK_POS=1 # left and right clock positions available
 		export OF_USE_GREEN_LED=0
-		export OF_FL_PATH1="/tmp/flashlight" # See /init.RMX3085.mt6785.rc for more information
+		export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.mt6785.rc for more information
 
 		# Other OrangeFox configs
 		export OF_ENABLE_LPTOOLS=1
@@ -77,7 +77,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 		export FOX_DELETE_AROMAFM=1
 		export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/redmi/rosemary/Magisk/Magisk.zip"
 
 	      # let's see what are our build VARs
           if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
