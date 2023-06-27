@@ -37,6 +37,10 @@ fi
 # Dirty Fix: Only declare orangefox vars when needed
 if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox.mk ]; then
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
+        if [ -z "$TW_DEFAULT_LANGUAGE" ]; then
+		unset TW_DEFAULT_LANGUAGE
+		export TW_DEFAULT_LANGUAGE="en"
+  
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Skyhuppa"
 		export FOX_VERSION=R11.1_1
