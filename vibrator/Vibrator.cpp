@@ -16,7 +16,7 @@
 
 #include "vibrator-impl/Vibrator.h"
 
-#define LOG_TAG "android.hardware.vibrator-service.rosemary"
+#define LOG_TAG "android.hardware.vibrator-service.RMX3085"
 
 #include <android-base/logging.h>
 #include <fstream>
