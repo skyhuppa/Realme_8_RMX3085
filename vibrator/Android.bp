@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libvibratorrosemary",
+    name: "libvibratorRMX3085",
     shared_libs: [
         "libbase",
         "libbinder_ndk",
@@ -14,17 +14,17 @@ cc_library_static {
 }
 
 cc_binary {
-    name: "android.hardware.vibrator-service.rosemary",
+    name: "android.hardware.vibrator-service.RMX3085",
     relative_install_path: "hw",
     init_rc: ["vibrator-rosemary.rc"],
-    vintf_fragments: ["vibrator-rosemary.xml"],
+    vintf_fragments: ["vibrator-RMX3085.xml"],
     shared_libs: [
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V2-ndk_platform",
     ],
     static_libs: [
-        "libvibratorrosemary",
+        "libvibratorRMX3085",
     ],
     srcs: ["main.cpp"],
 }
