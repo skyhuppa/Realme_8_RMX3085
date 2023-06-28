@@ -18,28 +18,9 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-
-FDEVICE="RMX3085"
-#set -o xtrace
-
-fox_get_target_device() {
-	local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
-	if [ -n "$chkdev" ]; then
-		FOX_BUILD_DEVICE="$FDEVICE"
-	else
-		chkdev=$(set | grep BASH_ARGV | grep -w $FDEVICE)
-		[ -n "$chkdev" ] && FOX_BUILD_DEVICE="$FDEVICE"
-	fi
-}
-
-if [ -z "$1" ] && [ -z "$FOX_BUILD_DEVICE" ]; then
-	fox_get_target_device
-fi
-
-# Dirty Fix: Only declare orangefox vars when needed
-if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
-	echo -e "\x1b[96m[INFO]: Setting up OrangeFox build vars for RMX3085...\x1b[m"
-	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
+FOX_MANIFEST_ROOT=$(gettop)
+if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox.mk ]; then
+	#export PLATFORM_VERSION="11.0"
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Skyhuppa"
 		export FOX_VERSION=R11.1_1
