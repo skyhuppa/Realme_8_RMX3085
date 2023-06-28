@@ -67,4 +67,3 @@ if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MA
 	       export | grep "TW_" >> $FOX_BUILD_LOG_FILE
           fi
       fi   
- fi
