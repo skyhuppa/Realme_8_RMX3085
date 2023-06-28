@@ -49,8 +49,6 @@ if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MA
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	# -- end R11 settings --
 
-        fi
-
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
