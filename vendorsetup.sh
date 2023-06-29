@@ -50,7 +50,7 @@ if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MA
 
 	# OTA for custom ROMs
 #	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-#	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 
 	# -- add settings for R11 --
         export OF_MAINTAINER=Skyhuppa
