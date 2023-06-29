@@ -67,11 +67,11 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.rosemary
+    android.hardware.vibrator-service.RMX3085
 
 # Copy the vibrator into recovery image
 PRODUCT_COPY_FILES += \
-	$(OUT_DIR)/target/product/rosemary/system/bin/hw/android.hardware.vibrator-service.rosemary:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.vibrator-service.rosemary
+	$(OUT_DIR)/target/product/RMX3085/system/bin/hw/android.hardware.vibrator-service.RMX3085:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.vibrator-service.RMX3085
 
 # Fastbootd
 PRODUCT_PACKAGES += \
