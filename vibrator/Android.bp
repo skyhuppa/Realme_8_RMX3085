@@ -16,7 +16,7 @@ cc_library_static {
 cc_binary {
     name: "android.hardware.vibrator-service.RMX3085",
     relative_install_path: "hw",
-    init_rc: ["vibrator-rosemary.rc"],
+    init_rc: ["vibrator-RMX3085.rc"],
     vintf_fragments: ["vibrator-RMX3085.xml"],
     shared_libs: [
         "libbase",
