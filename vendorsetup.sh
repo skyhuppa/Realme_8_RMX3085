@@ -13,15 +13,21 @@ if [ -f $FOX_MANIFEST_ROOT/bootable/recovery/orangefox_defaults.go -a -f $FOX_MA
 	export OF_STATUS_INDENT_RIGHT=48
   	export OF_HIDE_NOTCH=1
 	export OF_CLOCK_POS=1
+        export OF_ENABLE_LPTOOLS=1
+	export OF_ALLOW_DISABLE_NAVBAR=0
 	export OF_USE_MAGISKBOOT=1
 	export OF_AB_DEVICE=1
+        export OF_VIRTUAL_AB_DEVICE=1
+	export TARGET_DEVICE_ALT="RMX3085"
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+        export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800" # Tue Jan 1 2019 00:00:00 GMT
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	#export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1; # if you disable this, then enable the next line
 	export OF_NO_MIUI_PATCH_WARNING=1
-	export OF_USE_GREEN_LED=0
+	export OF_USE_GREEN_LED=
+        export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.mt6785.rc for more information
 
 	# use magisk 21.4 for the magisk addon
 	#export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-21.4.zip
