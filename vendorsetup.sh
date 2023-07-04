@@ -39,9 +39,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
   	export TARGET_DEVICE_ALT="RMX3085"
-	export OF_TARGET_DEVICES="RMX3085"
-	export OF_VIRTUAL_AB_DEVICE=1
-	export OF_AB_DEVICE=1
+	export FOX_TARGET_DEVICES="RMX3085"
+	export FOX_VIRTUAL_AB_DEVICE=1
+	export FOX_AB_DEVICE=1
   
 	# export OF_KEEP_FORCED_ENCRYPTION=1
         export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
@@ -85,7 +85,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# OTA for custom ROMs
 #	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+#	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 
 	# -- add settings for R11 --
         export OF_MAINTAINER=Skyhuppa
