@@ -69,9 +69,6 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.RMX3085
 
-   PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
-  	 $(LOCAL_PATH)/prebuilt/dtb.img
-
 # Copy the vibrator into recovery image
 PRODUCT_COPY_FILES += \
 	$(OUT_DIR)/target/product/RMX3085/system/bin/hw/android.hardware.vibrator-service.RMX3085:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.vibrator-service.RMX3085
