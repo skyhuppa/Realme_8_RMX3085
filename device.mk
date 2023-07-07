@@ -75,7 +75,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy the dtb image
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
-          $(LOCAL_PATH)/prebuilt/dtb
+          $(DEVICE_PATH)/prebuilt/dtb
 	 
 # Fastbootd
 PRODUCT_PACKAGES += \
