@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(OUT_DIR)/target/product/RMX3085/system/bin/hw/android.hardware.vibrator-service.RMX3085:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.vibrator-service.RMX3085
 
+# Copy the dtb image
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+          $(LOCAL_PATH)/prebuilt/dtb
+	 
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
