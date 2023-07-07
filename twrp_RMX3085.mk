@@ -30,7 +30,7 @@ $(call inherit-product, device/realme/RMX3085/device.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root) \
-          $(DEVICE_PATH)/prebuilt/dtb:dtb.img
+          $(DEVICE_PATH)/prebuilt/dtb
 	 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3085
