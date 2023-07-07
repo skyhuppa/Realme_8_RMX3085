@@ -53,6 +53,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Prebuilt: DTB
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_INCLUDE_RECOVERY_DTB := true
 
 # Prebuilt: DTBO
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
