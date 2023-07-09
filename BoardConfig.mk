@@ -122,7 +122,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # BOARD_USES_RECOVERY_AS_BOOT := true
 # TARGET_NO_RECOVERY := true
 # BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
-AB_OTA_UPDATER := true
+# AB_OTA_UPDATER := true
 
 # Additional binaries & libraries needed for recovery
      TARGET_RECOVERY_DEVICE_MODULES += \
