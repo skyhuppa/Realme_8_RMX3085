@@ -89,7 +89,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 	# -- add settings for R11 --
         export OF_MAINTAINER=Skyhuppa
-        export FOX_BUILD_TYPE="Stable"
+        export FOX_BUILD_TYPE="Alpha"
         export FOX_VARIANT=A13
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
