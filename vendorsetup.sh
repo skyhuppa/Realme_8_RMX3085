@@ -69,6 +69,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=
         export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.mt6785.rc for more information
 
+        # Device-specific flags
+        export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/by-name/recovery"
+	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
+
 	# use magisk 21.4 for the magisk addon
 	#export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-21.4.zip
 
@@ -90,7 +96,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# -- add settings for R11 --
         export OF_MAINTAINER=Skyhuppa
         export FOX_BUILD_TYPE="Alpha"
-        export FOX_VARIANT=A13
+        export FOX_VARIANT=A12.1
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	# -- end R11 settings --
