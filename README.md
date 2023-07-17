@@ -4,10 +4,9 @@
 
 
 ## Status 
-  Build Ready
+ This is test Build 
 ## What's not working? 
 Testers will have to givve feedback
-
 ## Discussion 
 
 [XDA Thread](https://forum.xda-developers.com/t/realme-8-rmx3085-twrp_-_root.4365305/).
