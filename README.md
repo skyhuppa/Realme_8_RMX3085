@@ -30,6 +30,8 @@ Testers will have to givve feedback
 | CREDIT              |  Twrp Team / EngRudhy / HemanthJabalpuri /ʂɑʈɧɑɱ ɧʋʂʂɑꀤɳ  |
 |                     |                                                           |
 
+[Download](https://skyhuppa.wordpress.com/2021/12/15/orangefox-for-realme-8-rmx3085/)
+
 ## Device Picture
 
 ![ Realme 8 -RMX3085 ](https://www.gizmochina.com/wp-content/uploads/2021/03/realme-8-pro-black-1.png)
