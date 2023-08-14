@@ -1,4 +1,4 @@
-![ Realme 8 -RMX3085 ](https://skyhuppa.files.wordpress.com/2021/12/orangefox.jpg)
+![ Realme 8 -RMX3085 ](https://skyhuppa.files.wordpress.com/2021/12/orangefox_recovery.jpg?w=1024)
 
 
 
