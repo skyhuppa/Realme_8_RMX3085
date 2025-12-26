@@ -16,6 +16,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root) \
  $(LOCAL_PATH)/prebuilt/dtb:dtb.img 
 
+PRODUCT_COPY_FILES += $(OUT_DIR)/target/product/RMX3085/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3085
 PRODUCT_NAME := twrp_RMX3085
