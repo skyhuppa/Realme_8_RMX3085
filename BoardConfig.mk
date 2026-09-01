@@ -133,6 +133,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1600
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
